@@ -11,6 +11,7 @@
     "test:e2e/gui": "vue-cli-service test:e2e",
     "lint:es": "vue-cli-service lint ./src ",
     "lint:pug": "pug-lint-vue ./src",
+    "lint:sass": "stylelint -s sass ./src",
     "lint": "vue-cli-service lint ./src ",
     "lint:fix": "vue-cli-service lint ./src --fix",
     "storybook:build": "vue-cli-service storybook:build -c config/storybook",
