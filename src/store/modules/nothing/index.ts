@@ -4,7 +4,7 @@ import { NothingActions } from './actions'
 import { NothingGetters } from '@/store/modules/nothing/getters'
 
 export class NothingState {
-  public Nothing: string = ''
+  public Nothing = ''
 }
 
 export const nothingModule = new Module({
