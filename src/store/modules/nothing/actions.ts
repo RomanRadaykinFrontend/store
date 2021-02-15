@@ -6,14 +6,14 @@ import { NothingGetters } from '@/store/modules/nothing/getters'
 
 
 export class NothingActions extends Actions<
-  NothingState,
-  NothingGetters,
-  NothingMutations,
-  NothingActions
+NothingState,
+NothingGetters,
+NothingMutations,
+NothingActions
 > {
   public async fetchNothing() {
     try {
-      const res = await fetch('')
+      const res = await fetch( '' )
       const Nothing = await res.text()
       this.mutations.setNothing( Nothing )
     } catch ( e ) {

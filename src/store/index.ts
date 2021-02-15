@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 import { createStore, Module } from 'vuex-smart-module'
 import { nothingModule } from './modules/nothing'
 
-Vue.use(Vuex)
+Vue.use( Vuex )
 
 export const root = new Module({
   modules: {
@@ -11,4 +11,4 @@ export const root = new Module({
   },
 })
 
-export const store = createStore(root)
+export const store = createStore( root )
