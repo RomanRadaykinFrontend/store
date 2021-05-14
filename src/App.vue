@@ -4,6 +4,7 @@
   router-view
 </template>
 <style lang="sass">
+@import common/assets/styles/reset
 @import common/assets/styles/fonts
 
 #app
