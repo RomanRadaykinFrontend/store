@@ -1,14 +1,15 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import { createStore, Module } from 'vuex-smart-module'
-import { nothingModule } from './modules/nothing'
+import { commonModule as cm } from '@/store/modules/common'
 
 Vue.use( Vuex )
 
 export const root = new Module({
   modules: {
-    nothingModule,
+    commonModule: cm,
   },
 })
 
 export const store = createStore( root )
+export const commonModule  = root.context( store ).modules.commonModule

@@ -13,12 +13,12 @@
     "lint:pug": "pug-lint-vue ./src",
     "lint:sass": "stylelint -s sass ./src",
     "lint": "vue-cli-service lint ./src ",
-    "lint:fix": "vue-cli-service lint ./src --fix",
-    "storybook:build": "vue-cli-service storybook:build -c config/storybook",
-    "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook"
+    "lint:fix": "vue-cli-service lint ./src --fix"
   },
   "dependencies": {
+    "@types/axios": "^0.14.0",
     "@types/uuid": "^8.3.0",
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "eslint-plugin-jsdoc": "^30.7.8",
     "eslint-plugin-prefer-arrow": "^1.2.2",
@@ -31,18 +31,13 @@
     "vue-eslint-parser": "^7.4.1",
     "vue-property-decorator": "^8.4.2",
     "vue-router": "^3.2.0",
+    "vue-svg-loader": "^0.16.0",
     "vuex": "^3.4.0",
     "vuex-class": "^0.3.2",
     "vuex-smart-module": "^0.5.0",
     "worker-plugin": "^5.0.0"
   },
   "devDependencies": {
-    "@storybook/addon-actions": ">=5.3.0",
-    "@storybook/addon-docs": ">=5.3.0",
-    "@storybook/addon-knobs": ">=5.3.0",
-    "@storybook/addon-links": ">=5.3.0",
-    "@storybook/addon-notes": ">=5.3.0",
-    "@storybook/vue": ">=5.3.0",
     "@types/jest": "^24.0.19",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "3.0.0",
@@ -68,7 +63,6 @@
     "terser-webpack-plugin": "^2.3.5",
     "typescript": "~3.9.3",
     "vue-cli-plugin-pug": "~1.0.7",
-    "vue-cli-plugin-storybook": "~1.2.1",
     "vue-pug-lint-loader": "^0.0.2",
     "vue-template-compiler": "^2.6.11"
   },

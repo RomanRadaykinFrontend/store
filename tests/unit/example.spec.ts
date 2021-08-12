@@ -1,7 +1,7 @@
 import { shallowMount } from '@vue/test-utils'
-import EmptyNothing from '@/components/EmptyNothing.vue'
+import EmptyNothing from '@/components/Slide.vue'
 
-describe( 'EmptyNothing.vue', () => {
+describe( 'Slide.vue', () => {
   it( 'EmptyNothing must be empty', () => {
     const wrapper = shallowMount( EmptyNothing )
     expect( wrapper.isEmpty() ).toBe( true )

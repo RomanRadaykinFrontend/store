@@ -1,14 +1,18 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
-import Home from '../views/Home.vue'
+import StoreView from '@/views/StoreView.vue'
 
 Vue.use( VueRouter )
 
 const routes: Array<RouteConfig> = [
   {
+    path: '/store',
+    name: 'Store',
+    component: StoreView,
+  },
+  {
     path: '/',
-    name: 'Home',
-    component: Home,
+    redirect: to => '/store',
   },
 ]
 
